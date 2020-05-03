@@ -122,7 +122,8 @@ void loop() {
   }
   client.loop();
   
-  client.publish("esp32/temperature", "test connection");
+  client.publish("/benoit", "Hello World");
+  delay(500);
   /* not working I2C code
   Wire.requestFrom(8, 6);
   Serial.println("Requesting");

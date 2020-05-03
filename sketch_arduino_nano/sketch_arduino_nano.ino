@@ -26,8 +26,21 @@ void setup() {
 }
  
 void loop() {
-  /*
+/*  
   s1 = FrontSensor.ping_cm();
+  s2 = RightSensor.ping_cm();
+  s3 = LeftSensor.ping_cm();
+  Serial.print("Front: ");
+  Serial.print(s1);
+  Serial.print(" | right: ");
+  Serial.print(s2);
+  Serial.print(" | left: ");
+  Serial.println(s3);
+  delay(100);
+*/
+
+
+s1 = FrontSensor.ping_cm();
   //Serial.print(s1);
   for (int i = 9; i > 0;i--)
   {
@@ -41,19 +54,11 @@ void loop() {
     Serial.print("-");
   }
   Serial.println(); 
-  */
-// */
-/* Ohter sensors
-  s2 = RightSensor.ping_cm();
-  s3 = LeftSensor.ping_cm();
-  Serial.print(" | right: ");
-  Serial.print(s2);
-  Serial.print(" | left: ");
-  Serial.println(s3);
   delay(250);
-*/
 
-delay(250);
+
+
+
 }
 
 void requestEvents()
